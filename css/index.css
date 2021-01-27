@@ -243,22 +243,19 @@ a{
 
 /* BENEFITS SECTION */
 
-.divBenefits{
+.curved{
+    background: #EE401A;
+    color: white;
+    text-align: center;
     font-size: 0;
 }
 
-.divBenefits h2{
-    position: absolute;
-    right: 200px;
-    top: 300px;
-    color: white;
+.curved h1{
+    font-size: 6rem;
+    font-family:  'Poppins', sans-serif;
+    margin: 0 5rem 0 5rem;
 }
 
-.divSecondSvg{
-    position: absolute;
-    bottom: 400px;
-}
-
-#twosvgup{
-    position: absolute;
+.upper{
+    background: #fff;
 }
