@@ -1,60 +1,77 @@
 /* GENERAL SETTING */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     /* height: 100vh;
     width: 100vw; */
 }
 
-h1{
+h1 {
     font-family: 2.6rem;
 }
 
-li,button,label,input,p{
+li,
+button,
+label,
+input,
+p {
     font-size: 2rem;
 }
 
-h2{
+h2 {
     font-size: 4.8rem;
 }
-h3{
+
+h3 {
     font-size: 3rem;
 }
-h4,h5{
+
+h4,
+h5 {
     font-size: 2.8rem;
 }
 
-h6{
+h6 {
     font-size: 2rem;
 }
-/* NAV BAR */
 
-a{
+/* NAV BAR */
+.line1,
+.line2,
+.line3 {
+    height: 0.03rem;
+    width: 0.05rem;
+    background-color: #000;
+    margin: 0.05rem;
+}
+
+
+a {
     text-decoration: none;
     color: black;
 }
 
-.navbar nav li{
+.navbar nav li {
     list-style: none;
 }
 
 
-.navbar{
+.navbar {
     background-color: #ffffff;
     /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); */
     /* , 0px 20px 20px rgba(0, 0, 0, 0.1); */
 }
 
-.navbar nav{
+.navbar nav {
     width: 80%;
     margin: auto;
     background-color: #ffffff;
@@ -66,64 +83,64 @@ a{
     flex-wrap: wrap;
 }
 
-.logoImage{
+.logoImage {
     width: 9rem;
     height: 7rem;
 }
 
-.divLogo{
-    flex:1 1 40rem;
+.divLogo {
+    flex: 1 1 40rem;
 }
 
 
-.navbar nav ul{
-    flex:1 1 40rem;
+.navbar nav ul {
+    flex: 1 1 40rem;
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
     flex-wrap: wrap;
 
     transition: all 0.5s;
 }
 
-.navbar nav ul li:hover{
-    border-bottom: #000000 solid 0.2rem;    
+.navbar nav ul li:hover {
+    border-bottom: #000000 solid 0.2rem;
 }
 
-.hero{
+.hero {
     min-height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.8), transparent), url('../img/heroSection.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url('../img/heroSection.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  
+
 }
 
 
-.heroContent{
+.heroContent {
     color: #ffffff;
-   min-height: 90vh;
-   width: 80%;
-   margin: auto;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   justify-content: center;
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 
-.heroContent h2{
+.heroContent h2 {
     padding: 3rem 0rem;
 }
 
-.heroContent h3{
-  padding: 3rem 0rem;
+.heroContent h3 {
+    padding: 3rem 0rem;
 }
 
-.heroContent button{
+.heroContent button {
     margin-top: 3rem;
     padding: 2rem;
     color: white;
-    border:none;
+    border: none;
     border-radius: 1rem;
     background-color: #EE401A;
     font-weight: 1000;
@@ -131,60 +148,61 @@ a{
     transition: all 0.3s ease-in 0.1s;
 }
 
-.heroContent button:hover{
+.heroContent button:hover {
     background-color: white;
-    color:#EE401A;
+    color: #EE401A;
 }
 
 
 /* SERVICE SECTION */
-.sectionService{
+.sectionService {
     height: auto;
     padding: 10rem 0rem;
-} 
-
-.divService{
-    width: 80%;
-    margin: auto;
-    
 }
 
-.divService h2, .divService h3{
+.divService {
+    width: 80%;
+    margin: auto;
+
+}
+
+.divService h2,
+.divService h3 {
     text-align: center;
     padding-bottom: 3rem;
 }
 
-.divCards{
+.divCards {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.divCard{
+.divCard {
     flex: 1 1 40rem;
     margin: 4rem;
 }
 
 
-.divImgCard img{
+.divImgCard img {
     max-width: 100%;
-   
-} 
 
-.divCard{
+}
+
+.divCard {
     transition: all 0.7s;
 }
 
-.divCard:hover{
+.divCard:hover {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
     transform: scale(1.1);
 }
 
-.divContentCard{
+.divContentCard {
     padding: 1.5rem;
 }
 
-.divContentCard h6{
+.divContentCard h6 {
     text-align: center;
     padding: 1rem;
 }
@@ -192,16 +210,14 @@ a{
 
 /* GALLERY SECTION */
 
-#benfits{
+#benfits {
     position: relative;
 }
 
-.divGallery{
-  
-}
+.divGallery {}
 
-.divTitleGallery{
-    
+.divTitleGallery {
+
     min-height: 15vh;
     padding: 2rem;
     display: flex;
@@ -213,7 +229,7 @@ a{
 
 
 
-.divGalleryImage{
+.divGalleryImage {
     width: 80%;
     margin: auto;
     height: auto;
@@ -223,7 +239,7 @@ a{
     flex-wrap: wrap;
 }
 
-.divImage{
+.divImage {
     flex: 0 1 35rem;
     height: 30rem;
     margin: 1rem;
@@ -231,31 +247,31 @@ a{
     cursor: pointer;
 }
 
-.galleryImage{
+.galleryImage {
     width: 100%;
     height: 100%;
 }
 
-.divImage:hover{
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0,0.5);
+.divImage:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
 }
 
 /* BENEFITS SECTION */
 
-.curved{
+.curved {
     background: #EE401A;
     color: white;
     text-align: center;
     font-size: 0;
 }
 
-.curved h1{
+.curved h1 {
     font-size: 6rem;
-    font-family:  'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0 5rem 0 5rem;
 }
 
-.upper{
+.upper {
     background: #fff;
 }

@@ -1,29 +1,88 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+
     margin: 0;
-    overflow: hidden;
+
 }
 
-.curved{
+
+/* NAV SECTION */
+.sectionNavBar {
+    background-color: saddlebrown;
+
+}
+
+.navBar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 11vh;
+
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navLinks li {
+    list-style: none;
+    opacity: 0;
+}
+
+.logo {}
+
+.logo img {
+    width: 7rem;
+    height: 5rem;
+}
+
+.burger {
+    display: none;
+}
+
+
+
+.line1,
+.line2,
+.line3 {
+    margin: 0.2rem;
+    width: 1.8rem;
+    height: 0.3rem;
+    background-color: #fff;
+    transition: all 0.5s ease;
+
+}
+
+/* CURVED SECTION */
+
+.curved {
     background: cadetblue;
     color: white;
     text-align: center;
 
 }
 
-.curved h1{
+.curved h1 {
     font: 6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.curved p{
+.curved p {
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 5rem 0 5rem;
@@ -33,6 +92,65 @@ body{
     display: block;
 }
 
-.curved.upper{
+.curved.upper {
     background: #fff;
+}
+
+@media screen and (max-width:768px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .navLinks {
+        position: absolute;
+        top: 11vh;
+        right: 0px;
+        background-color: saddlebrown;
+        width: 50%;
+        height: 89vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in;
+    }
+
+    .burger {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-2px, 11px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-2px, -11px);
 }
