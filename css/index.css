@@ -44,16 +44,20 @@ h6 {
     font-size: 2rem;
 }
 
-/* NAV BAR */
-.line1,
+font-size: 3rem;
+
 .line2,
 .line3 {
-    height: 0.03rem;
-    width: 0.05rem;
+    height: 0.5rem;
+    width: 3rem;
     background-color: #000;
-    margin: 0.05rem;
+    margin: 0.6rem;
+    transition: all 0.5s;
 }
 
+.burger {
+    display: none;
+}
 
 a {
     text-decoration: none;
@@ -63,7 +67,6 @@ a {
 .navbar nav li {
     list-style: none;
 }
-
 
 .navbar {
     background-color: #ffffff;
@@ -76,11 +79,10 @@ a {
     margin: auto;
     background-color: #ffffff;
     min-height: 10vh;
-    padding: 0.5rem;
+    padding: 0.5rem 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .logoImage {
@@ -88,18 +90,11 @@ a {
     height: 7rem;
 }
 
-.divLogo {
-    flex: 1 1 40rem;
-}
-
-
 .navbar nav ul {
-    flex: 1 1 40rem;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-
     transition: all 0.5s;
+    width: 50%;
 }
 
 .navbar nav ul li:hover {
@@ -115,7 +110,6 @@ a {
 
 }
 
-
 .heroContent {
     color: #ffffff;
     min-height: 90vh;
@@ -126,7 +120,6 @@ a {
     align-items: flex-start;
     justify-content: center;
 }
-
 
 .heroContent h2 {
     padding: 3rem 0rem;
@@ -259,6 +252,10 @@ a {
 
 /* BENEFITS SECTION */
 
+.benfits {
+    margin-bottom: 5rem;
+}
+
 .curved {
     background: #EE401A;
     color: white;
@@ -274,4 +271,205 @@ a {
 
 .upper {
     background: #fff;
+}
+
+.divBenefitsCards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefitsCard {
+    flex: 1 1 25rem;
+    height: 60rem;
+    margin: 6rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.beneftisLogo {
+    color: #fff;
+    background-color: #25315B;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.benefitsContent {
+    padding: 1rem;
+}
+
+.benefitsContent h4 {
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+.benefitsContent p {
+    text-align: justify;
+    padding: 0rem 2rem;
+}
+
+/* CONTACT US !!! */
+
+.contactUs {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url('../img/contactusSection/contactUs1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding: 5rem 0rem; */
+}
+
+.divContactUs {
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* .divFormContactUs {
+    flex: 1 1 50%;
+    margin: 5rem 4rem;
+    height: 60rem;
+} */
+
+.divFormContactUs,
+.divCallUsContactUs {
+    flex: 1 1 50%;
+    margin: 5rem 4rem;
+    height: 60rem;
+}
+
+.divFormContactUs,
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.divForm form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.divEmailUs {
+    display: flex;
+    flex-direction: column;
+}
+
+.endFootter {
+    min-height: 10vh;
+    background-color: #4C8CD8;
+}
+
+.divForm {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+    padding: 6rem 8rem;
+    height: 100%;
+    width: 100%;
+}
+
+.divCallUsContactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divName,
+.divPhone,
+.divEmail,
+.divDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+}
+
+.inputForm {
+    width: 100%;
+    height: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 2rem;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    body {
+        /* display: none; */
+        overflow-x: hidden;
+    }
+
+    .divImage {
+        flex-grow: 1;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navlinks {
+        position: absolute;
+        right: 0px;
+        top: 10vh;
+        width: 50%;
+        height: 90vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in;
+    }
+
+    .navlinks li {
+        opacity: 0;
+    }
+
+    .curved h2 {
+        font-size: 3rem;
+    }
+}
+
+.navLinksActive {
+    transform: translateX(0%);
+}
+
+@keyframes navLinksAnimations {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/* ANIMATION FOR CONVERT THE HUAMBURGER TO X */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
