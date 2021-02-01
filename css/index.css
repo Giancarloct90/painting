@@ -48,7 +48,7 @@ h6 {
 .line1,
 .line2,
 .line3 {
-    height: 0.5rem;
+    height: 0.6rem;
     width: 3rem;
     background-color: #000;
     margin: 0.6rem;
@@ -429,7 +429,6 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
         transform: translateX(100%);
         transition: all 0.3s ease-in;
     }
