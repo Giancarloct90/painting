@@ -323,82 +323,40 @@ a {
 }
 
 .divContactUs {
-    min-height: 90vh;
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     color: #fff;
 }
 
-/* .divFormContactUs {
-    flex: 1 1 50%;
-    margin: 5rem 4rem;
-    height: 60rem;
-} */
-
 .divFormContactUs,
 .divCallUsContactUs {
-    flex: 1 1 40%;
-    margin: 5rem 4rem;
-    height: 60rem;
+    flex: 1 1 45%;
+    margin: 6rem 2rem;
 }
 
 .divFormContactUs h2 {
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-.divForm form {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-}
-
-.divEmailUs {
-    display: flex;
-    flex-direction: column;
-}
-
-.endFootter {
-    min-height: 10vh;
-    background-color: #4C8CD8;
+    margin-bottom: 1.5rem;
 }
 
 .divForm {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
-    padding: 6rem 0rem;
-    height: 100%;
-    width: 100%;
+    padding: 3rem;
 }
 
-.divCallUsContactUs {
+.divForm form div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 2rem;
 }
 
-.divName,
-.divPhone,
-.divEmail,
-.divDescription {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 2.5rem;
+input[type=text],
+textarea {
+    border-radius: 0.5rem;
 }
-
-.inputForm {
-    width: 100%;
-    height: 1rem;
-    border-radius: 1.5rem;
-    border: none;
-    padding: 2rem;
-}
-
 
 /* RESPONSIVE DESIGN */
 
