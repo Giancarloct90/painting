@@ -320,34 +320,45 @@ a {
 .divContactUs {
     width: 90%;
     margin: auto;
+    color: #fff;
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
 }
 
-.divFormContactUs,
+.divFormContactUs {
+    flex: 1 1 40rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 2rem;
+}
+
+.divTitle {
+    margin: 2.5rem 0rem;
+}
+
 .divCallUsContactUs {
-    flex: 1 1 35rem;
-    height: auto;
-    margin: 2rem 2rem;
-}
-
-.divFormContactUs h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
+    flex: 1 1 40rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .divForm {
+    width: 100%;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
-    padding: 2rem 5rem;
-    height: 100%;
+    padding: 3rem 4rem;
+    margin: 2rem 0rem;
 }
 
 .divForm form div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 input[type=text],
@@ -357,16 +368,8 @@ textarea {
 }
 
 input[type=text] {
-    height: 4rem;
-}
-
-label {
-    font-size: 2rem;
-}
-
-.endFootter {
-    min-height: 10vh;
-    background-color: #143c6d;
+    height: 2.5rem;
+    border: none;
 }
 
 .btnContactUs {
@@ -386,15 +389,18 @@ label {
     background-color: #4C8CD8;
 }
 
-.divCallUsContactUs {
+.lblText {
+    font-size: 2rem;
+}
+
+.divCallUsContactUs,
+.divFormContactUs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
-
-
 
 .divCallUsContactUs div h3 {
     font-size: 4rem;
@@ -406,14 +412,18 @@ label {
     font-weight: 750;
 }
 
-
 .divCallus,
 .divEmailUs {
-    margin: 10rem 0rem;
+    margin: 10rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.endFootter {
+    min-height: 10vh;
+    background-color: #143c6d;
 }
 
 /* RESPONSIVE DESIGN */
@@ -456,12 +466,12 @@ label {
     }
 
     .divCallUsContactUs div h3 {
-        font-size: 5rem;
+        font-size: 4.5rem;
         font-weight: 300;
     }
 
     .divCallUsContactUs div p {
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 800;
     }
 
@@ -469,16 +479,38 @@ label {
     .divEmailUs {
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 2rem;
-        padding: 2rem 0.3rem;
+        padding: 2rem 2rem;
+        margin: 5em 3rem;
+
+    }
+
+    .divFormContactUs,
+    .divCallUsContactUs {
+        height: auto;
     }
 }
 
 @media screen and (max-width:330px) {
 
-
     .divFormContactUs {
         width: 90%;
         margin: 6rem 2rem;
+    }
+
+    .divCallUsContactUs div h3 {
+        font-size: 3.5rem;
+        font-weight: 300;
+    }
+
+    .divCallUsContactUs div p {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .divCallus,
+    .divEmailUs {
+        margin: 5em 3rem;
+
     }
 }
 
