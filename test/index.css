@@ -156,6 +156,14 @@ body {
 }
 
 
+.doubleNavbar {
+    background-color: rosybrown;
+}
+
+.doubleNavbar footer {
+    display: flex;
+}
+
 
 /* contact testting */
 

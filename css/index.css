@@ -421,9 +421,48 @@ input[type=text] {
     justify-content: center;
 }
 
+/* FOTTER SECTION */
 .endFootter {
-    min-height: 10vh;
     background-color: #143c6d;
+}
+
+.socialFotter li {
+    list-style: none;
+}
+
+.socialFotter li a {
+    color: #fff;
+}
+
+.socialFotter {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divLogoFooter {
+    letter-spacing: 0.5rem;
+}
+
+.divContentFooter {
+    color: #fff;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* FIRMA */
+.firma {
+    min-height: 7vh;
+    background-color: rgb(65, 184, 29);
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* RESPONSIVE DESIGN */
