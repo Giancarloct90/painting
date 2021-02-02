@@ -453,6 +453,7 @@ input[type=text] {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* FIRMA */
@@ -526,6 +527,15 @@ input[type=text] {
     .divFormContactUs,
     .divCallUsContactUs {
         height: auto;
+    }
+
+    .socialFotter {
+        width: 60%;
+    }
+
+    .divContentFooter {
+        padding: 1rem;
+        justify-content: center;
     }
 }
 
