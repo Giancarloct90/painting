@@ -203,11 +203,6 @@ a {
 
 /* GALLERY SECTION */
 
-#benfits {
-    position: relative;
-}
-
-.divGallery {}
 
 .divTitleGallery {
 
@@ -319,7 +314,7 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* padding: 5rem 0rem; */
+    min-height: 90vh;
 }
 
 .divContactUs {
@@ -332,8 +327,9 @@ a {
 
 .divFormContactUs,
 .divCallUsContactUs {
-    flex: 1 1 45%;
-    margin: 6rem 2rem;
+    flex: 1 1 35rem;
+    height: auto;
+    margin: 2rem 2rem;
 }
 
 .divFormContactUs h2 {
@@ -344,18 +340,80 @@ a {
 .divForm {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
-    padding: 3rem;
+    padding: 2rem 5rem;
+    height: 100%;
 }
 
 .divForm form div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 input[type=text],
 textarea {
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    padding: 0rem 1.5rem;
+}
+
+input[type=text] {
+    height: 4rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+.endFootter {
+    min-height: 10vh;
+    background-color: #143c6d;
+}
+
+.btnContactUs {
+    border: none;
+    width: 100%;
+    height: 4rem;
+    border-radius: 1rem;
+    color: #fff;
+    background-color: #1f589e;
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.btnContactUs:hover {
+    background-color: #4C8CD8;
+}
+
+.divCallUsContactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.divCallUsContactUs div h3 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.divCallUsContactUs div p {
+    font-size: 5rem;
+    font-weight: 750;
+}
+
+
+.divCallus,
+.divEmailUs {
+    margin: 10rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* RESPONSIVE DESIGN */
@@ -363,10 +421,7 @@ textarea {
 @media screen and (max-width:768px) {
     html {
         font-size: 45%;
-        overflow-x: hidden;
-        /* display: none; */
     }
-
 
     .divImage {
         flex-grow: 1;
@@ -378,7 +433,7 @@ textarea {
     }
 
     .navlinks {
-        position: absolute;
+        position: fixed;
         right: 0px;
         top: 10vh;
         width: 50%;
@@ -389,6 +444,7 @@ textarea {
         align-items: center;
         transform: translateX(100%);
         transition: all 0.3s ease-in;
+        padding: 0px;
     }
 
     .navlinks li {
@@ -397,6 +453,32 @@ textarea {
 
     .curved h2 {
         font-size: 3rem;
+    }
+
+    .divCallUsContactUs div h3 {
+        font-size: 5rem;
+        font-weight: 300;
+    }
+
+    .divCallUsContactUs div p {
+        font-size: 4rem;
+        font-weight: 800;
+    }
+
+    .divCallus,
+    .divEmailUs {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 2rem;
+        padding: 2rem 0.3rem;
+    }
+}
+
+@media screen and (max-width:330px) {
+
+
+    .divFormContactUs {
+        width: 90%;
+        margin: 6rem 2rem;
     }
 }
 
