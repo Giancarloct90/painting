@@ -1,13 +1,14 @@
 const navlinks = document.getElementById('navlinks');
 const burger = document.getElementById('burger');
-const navLinksActive = document.querySelectorAll('.navlinks li');
+const navLinksActives = document.querySelectorAll('.navlinks li');
+const li = document.getElementsByTagName('li');
 
 burger.addEventListener('click', ()=>{
     //toggle class
     navlinks.classList.toggle('navLinksActive');
     
     //Animation li 
-    navLinksActive.forEach((link,index)=>{
+    navLinksActives.forEach((link,index)=>{
         if(link.style.animation){
             link.style.animation = '';
         }else{
@@ -17,5 +18,24 @@ burger.addEventListener('click', ()=>{
 
     //Convert tha humburger to X
     burger.classList.toggle('toggle');
+});
+
+navLinksActives.forEach(item =>{
+    item.addEventListener('click', ()=>{
+           //toggle class
+    navlinks.classList.toggle('navLinksActive');
+    
+    //Animation li 
+    navLinksActives.forEach((link,index)=>{
+        if(link.style.animation){
+            link.style.animation = '';
+        }else{
+            link.style.animation= `navLinksAnimations 0.5s ease forwards ${index/7+0.3}s`
+        }
+    });
+
+    //Convert tha humburger to X
+    burger.classList.toggle('toggle');
+    });
 });
 
