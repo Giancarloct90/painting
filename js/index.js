@@ -4,6 +4,7 @@ const navLinksActives = document.querySelectorAll('.navlinks li');
 const li = document.getElementsByTagName('li');
 
 burger.addEventListener('click', ()=>{
+    navlinks.style.display = ''
     //toggle class
     navlinks.classList.toggle('navLinksActive');
     
@@ -22,6 +23,8 @@ burger.addEventListener('click', ()=>{
 
 navLinksActives.forEach(item =>{
     item.addEventListener('click', ()=>{
+    navlinks.style.display = ''
+
            //toggle class
     navlinks.classList.toggle('navLinksActive');
     
@@ -38,4 +41,8 @@ navLinksActives.forEach(item =>{
     burger.classList.toggle('toggle');
     });
 });
+
+window.addEventListener('scroll', ()=>{
+    navlinks.style.display = 'none'
+})
 
