@@ -494,7 +494,6 @@ input[type=text] {
         transform: translateX(100%);
         transition: all 0.3s ease-in;
         padding: 6rem 0rem;
-        background-color: aqua;
     }
 
     .navlinks li {
