@@ -483,7 +483,7 @@ input[type=text] {
     .navlinks {
         position: fixed;
         right: 0px;
-        top: 10vh;
+        top: calc(var(--vh, 1vh) * 10);
         width: 50%;
         height: 90vh;
         height: calc(var(--vh, 1vh) * 90);
@@ -493,7 +493,8 @@ input[type=text] {
         align-items: center;
         transform: translateX(100%);
         transition: all 0.3s ease-in;
-        padding: 4rem 0rem;
+        padding: 6rem 0rem;
+        background-color: aqua;
     }
 
     .navlinks li {
