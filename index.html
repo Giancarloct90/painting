@@ -44,7 +44,7 @@
             <div class="heroContent">
                 <h2>Are you looking for </br>renovation professionals?</h2>
                 <h3>We have a great team for your renovation projects</h3>
-                <button class="btn1">GET A FREE QOUTE</button>
+                <a href="#contactUs" class="btn1"><button href="#contactUs" class="btn1">CONTACT US</button></a>
             </div>
         </section>
         
@@ -199,33 +199,36 @@
         
         <!-- CONTACT US SECTION -->
         <section id="contactUs" class="contactUs">
+
             <div class="divContactUs">
+
                 <div class="divFormContactUs">
                         <div class="divTitle">
                             <h3>Contact Us!!</h3>
                         </div>
                         <div class="divForm">
-                            <form action="">
+                            <form action="https://formspree.io/f/xvovnjqn" method="POST">
                                 <div class="divName">
                                     <label class="lblText" for="txtName">Name:</label>
-                                    <input class="inputForm" id="txtName" type="text">
+                                    <input class="inputForm" name="txtName" required id="txtName" type="text">
                                 </div>
                                 <div class="divPhone">
-                                    <label class="lblText" for="txtPhone">Phone Number</label>
-                                    <input class="inputForm" id="txtPhone" type="text">
+                                    <label class="lblText" for="txtPhone">Phone Number:</label>
+                                    <input class="inputForm" name="txtPhone" required id="txtPhone" type="text">
                                 </div>
                                 <div class="divEmail">
-                                    <label class="lblText" for="txtEmail">Email</label>
-                                    <input class="inputForm" id="txtEmail" type="text">
+                                    <label class="lblText" for="txtEmail">Email:</label>
+                                    <input class="inputForm" name="txtEmail" required id="txtEmail" type="text">
                                 </div>
                                 <div class="divDescription">
-                                    <label class="lblText" for="description">Description</label>
-                                    <textarea name="" class="inputFormq" id="description" cols="30" rows="10"></textarea>
+                                    <label class="lblText" for="description">Description:</label>
+                                    <textarea name="" class="inputFormq" name="message" required id="description" cols="30" rows="10"></textarea>
                                 </div>
-                                <button class="btnContactUs">Send Info</button>
+                                <button value="send" type="submit" class="btnContactUs">Send Info</button>
                             </form>
                         </div>
                 </div>
+
                 <div class="divCallUsContactUs">
                     <div class="divCallus">
                         <h3>Call Us!!</h3>
@@ -253,7 +256,7 @@
 
         <!-- SIGNED -->
         <section class="firma">
-            <h4>GDev</h4>
+            <h4>G-Dev</h4>
         </section>
     </main>
 </body>

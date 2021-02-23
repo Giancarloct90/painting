@@ -53,3 +53,49 @@ a {
 .navbar nav ul li:hover {
     border-bottom: #000000 solid 0.2rem;
 }
+
+
+
+/* ******************************************** */
+/* CONTACT US */
+
+.divContactUs {
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divFormContactUs {
+    flex: 1 1 40rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.divTitle {}
+
+.divCallUsContactUs {
+    flex: 1 1 40rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divForm {
+    width: 60%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    padding: 3rem 4rem;
+    margin: 2rem 0rem;
+}
+
+.divForm form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}

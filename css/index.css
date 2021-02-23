@@ -328,13 +328,10 @@ h6 {
     height: 90vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0rem 2rem;
+    margin-top: 3rem;
 }
 
-.divTitle {
-    margin: 2.5rem 0rem;
-}
+.divTitle {}
 
 .divCallUsContactUs {
     flex: 1 1 40rem;
@@ -345,7 +342,7 @@ h6 {
 }
 
 .divForm {
-    width: 100%;
+    width: 60%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
@@ -359,16 +356,24 @@ h6 {
     margin-bottom: 2rem;
 }
 
-input[type=text],
-textarea {
+input[type=text] {
     border-radius: 1rem;
     padding: 0rem 1.5rem;
+    font-size: 2rem;
 }
 
 input[type=text] {
-    height: 2.5rem;
+    height: 3.5rem;
     border: none;
 }
+
+#description {
+    border-radius: 1rem;
+
+    font-size: 2rem;
+    height: 10rem;
+}
+
 
 .btnContactUs {
     border: none;
@@ -388,7 +393,8 @@ input[type=text] {
 }
 
 .lblText {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    font-weight: 700;
 }
 
 .divCallUsContactUs,
@@ -536,6 +542,14 @@ input[type=text] {
         padding: 1rem;
         justify-content: center;
     }
+
+    .divFormContactUs {
+        margin-top: 3rem;
+    }
+
+    .divForm {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:330px) {
@@ -559,6 +573,14 @@ input[type=text] {
     .divEmailUs {
         margin: 5em 3rem;
 
+    }
+
+    .divFormContactUs {
+        margin-top: 3rem;
+    }
+
+    .divForm {
+        width: 100%;
     }
 }
 
